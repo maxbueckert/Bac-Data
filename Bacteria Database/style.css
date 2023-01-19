@@ -1,0 +1,72 @@
+
+
+@font-face {
+  font-family: 'my-new-font'; /* name of the font */
+  src: url('/Users/maxbueckert/Desktop/JavaScript/New /Exo 2.0 2/Exo2-Italic.otf') format('opentype'); /* location of the font file */
+}
+
+body {
+  background-image: url('bacteria-163711.jpeg');
+  height: 100%;
+}
+
+.backdrop {
+
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.0);
+
+
+}
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Arial';
+  font-weight:bold;
+  font-size:40px;
+
+  color:aliceblue;
+  opacity: 90%;
+  
+}
+
+  
+  .input-field {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    width: 80%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 70%;
+  }
+  
+  .submit-button:hover {
+    opacity: 50%;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+  }
+
