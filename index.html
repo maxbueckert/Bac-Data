@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacteria Database</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/exo-4" rel="stylesheet">
+</head>
+
+
+
+<body>
+    
+    <div id = "backdrop">
+
+        <div class="form-container">
+
+            <h1>Max's Growth Condition Calculator</h1>
+            <form>
+            <input type="text" id="bacteria-input" class="input-field" placeholder="Please Enter the Bacteria Name">
+            
+                <div class = "subimt-and-help">
+                    <button class="submit-button">Submit</button>
+                    <button class="expand-button">Help</button>
+
+                         <div 
+                            class="expand-box">
+                            Enter the bacteria genus and species (case insensitive). You may abbreviate the genus name. Ensure that the genus and species are two seperate words.
+                            <br> 
+                            For example, 'Escherichia coli',  'escherichia coli', 'E coli',  'E. coli',  'e coli', and  'e. coli' are all valid inputs. 'ecoli' is not a valid input.
+                        </div>
+                </div>
+                    
+            </form>
+
+            <div id="result"></div>
+
+        </div>
+
+    
+                    <div id = "websiteInfo" >
+                        <button class= "exitInfo">
+                            X
+                        </button>
+                        <h3 class = "infoHeader">Welcome to Max's Growth Condition Calculator!</h3>
+                        <p>This website we provides growth conditions for over 50 different bacteria species commonly used in 
+                            research. Our database is continuously expanding, so if the bacteria you are
+                             looking for is not included yet, we apologize in advance. <br>
+
+                            Please note that, as a researcher, it's important to double check and consult peer-reviewed literature before 
+                            planning experiments based on the information provided by this website. We strive to provide 
+                            accurate and reliable information, but it's always good practice to verify the information with other sources. <br>
+                            
+                            If you're interested in the types of bacteria included in our database, 
+                            please click on the link provided below for more information. With our database,
+                             we aim to assist researchers in their work and make it easier to find 
+                             the growth conditions for the bacteria they need. </p>
+                             
+                        <button class= "viewAllBacteria">
+                            Click here to view all bacteria in this database
+                        </button>
+                        
+                    </div>
+
+
+        <div id = 'infoButton'>
+            <form>
+                <button class="website-info-button">
+                    ABOUT
+                </button>
+            </form>
+        </div>
+
+
+
+        <div id="allBacteria">
+            <h2 class = "allBacteriaHeader">The following is a list of all bacteria included in this database:</h2>
+            <div id = "allBacteriaText"></div>
+            <button class= "exitAllBacteria">
+                X
+            </button>
+                        </div>
+
+
+                        
+
+        <div class = "redirects">
+            <button id="Linkdin"></button>
+            <button id="GitHub"></button>
+        </div>
+
+
+    </div>
+
+ 
+</body>
+
+<script src="main.js"></script>
+
+</html>
