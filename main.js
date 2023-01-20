@@ -69,6 +69,10 @@ const bacteriaList = {
     "Thermotoga maritima": "thermophile that grows well at 80-85°C in nutrient agar or nutrient broth."
 }
 
+
+
+// Main Function ---------------------------------------------------------------
+
 /*ensure background for output is not displayed when their is no output */
 result.style.display = 'None';
 
@@ -125,32 +129,82 @@ result.style.display = 'None';
 
 
 
-    websiteInfo.style.display = 'none'
-
-    about = websiteInfo.style.display
-
-    document.querySelector('.website-info-button').addEventListener('click', function() {
-        event.preventDefault();
-
-        allBacteria.style.display = 'None';
-
-        if (websiteInfo.style.display === 'none') {
-            websiteInfo.style.display = 'Block';
-        } 
-        else {
-            websiteInfo.style.display = 'none'
-        }
-    })
 
 
-    document.querySelector('.exitInfo').addEventListener('click', function() {
-        event.preventDefault();
-        websiteInfo.style.display = 'none';
-    });
+// HELP BUTTON ----------------------------------------------------------------
+
+helpBox.style.display = 'None';
+
+document.getElementById('helpButton').addEventListener('mouseover', function() {
+    event.preventDefault();
+    helpBox.style.display = 'Block';
+});
+
+document.getElementById('helpBox').addEventListener('mouseover', function() {
+    event.preventDefault();
+    helpButton.style.opacity = '40%';
+    helpBox.style.display = 'Block';
+});
+
+
+document.getElementById('helpButton').addEventListener('mouseout', function() {
+    event.preventDefault();
+    helpBox.style.display = 'None';
+});
+
+document.getElementById('helpBox').addEventListener('mouseout', function() {
+    event.preventDefault();
+    helpButton.style.opacity = '70%';
+    helpBox.style.display = 'None';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// INFO BUTTON ----------------------------------------------------------------
+
+// // INFO BUTTON - First Window ----------------------------------------------------------------
+
+websiteInfo.style.display = 'none'
+
+about = websiteInfo.style.display
+
+document.querySelector('.website-info-button').addEventListener('click', function() {
+    event.preventDefault();
+
+    allBacteria.style.display = 'None';
+
+    if (websiteInfo.style.display === 'none') {
+        websiteInfo.style.display = 'Block';
+    } 
+    else {
+        websiteInfo.style.display = 'none'
+    }
+})
+
+
+
+document.querySelector('.exitInfo').addEventListener('click', function() {
+    event.preventDefault();
+    websiteInfo.style.display = 'none';
+});
  
 
 
-    allBacteria.style.display = 'none';
+
+
+// // INFO BUTTON - All Bacteria Window -------------------------------------------------------------
+
+allBacteria.style.display = 'none';
 
 keys = Object.keys(bacteriaList);
 keys.sort()
@@ -174,6 +228,13 @@ document.querySelector('.exitAllBacteria').addEventListener('click', function() 
     allBacteria.style.display = 'none';
 });
 
+
+
+
+
+
+
+// Redirects ---------------------------------------------------------------------------
 
 
 document.getElementById("Linkdin").addEventListener('click', function() {
