@@ -1,5 +1,6 @@
+// test
 const bacteriaList = {
-    "Escherichia coli": "facultative anaerobe that grows well at 37°C and pH 7 in Luria broth (LB) or on Luria agar (LA) plates",
+    "Escherichia coli": "Facultative anaerobe that grows well at 37°C and pH 7 in Luria broth (LB) or on Luria agar (LA) plates",
     "Streptococcus pneumoniae": "facultative anaerobe that grows well at 35-37°C in blood agar or tryptic soy agar (TSA) plates at 5% CO2.",
     "Bacillus subtilis": "mesophile that grows well at 37°C and pH 7 in nutrient agar or nutrient broth",
     "Staphylococcus aureus": " facultative anaerobe that grows well at 37°C in nutrient agar or tryptic soy agar (TSA) plates",
