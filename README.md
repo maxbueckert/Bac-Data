@@ -1,4 +1,4 @@
-##Max's Bacterial Growth Calculator
+#Max's Bacterial Growth Calculator
 
 **Overview**
 
